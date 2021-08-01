@@ -20,7 +20,7 @@ const Item: React.FC<Props> = ({ item, handleAddToCart }) => (
         </div>
         <Button onClick={() => handleAddToCart(item)} >Add To Cart</Button>
     </Wrapper>
-    //-- can't do onClick={handleAddToCart(item)}. bc then, it's going to be triggered right away  
+    //-- can't do onClick={handleAddToCart(item)}. bc then, it's going to be triggered right away, even before it's clicked  
 );
 
 export default Item;

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; //-- between img, div, and button
     flex-direction: column;
     width: 100%;
     border: 1px solid lightblue;

@@ -69,27 +69,27 @@ const App = () => {
   const getTotalItems = (items:CartItemType[]) => items.reduce((accm: number, item) => accm + item.amount, 0);  //-- implicit return
   //
   const handleAddToCart = (clickedItem:CartItemType) => {
-    setCartItems(prevCartItems => {
+    setCartItems(prev => {
       //-- is the item already in the cart?
-      const isItemInCart = prevCartItems.find(item => item.id === clickedItem.id);
+      const isItemInCart = prev.find(item => item.id === clickedItem.id);
       if (isItemInCart) {
         //-- update the amount
-        return prevCartItems.map(item => (
+        return prev.map(item => (
           item.id === clickedItem.id ? {...item, amount: item.amount + 1} : item
         ));
       }
       //-- it's the first time the item is added
-      return [...prevCartItems, {...clickedItem, amount: 1}];
+      return [...prev, {...clickedItem, amount: 1}];
     });
   };
   const handleRemoveFromCart = (id: number) => {
     setCartItems(prev =>
-      prev.reduce((ack, item) => {
+      prev.reduce((accm, item) => {
         if (item.id === id) {
-          if (item.amount === 1) return ack;
-          return [...ack, {...item, amount: item.amount-1}];
+          if (item.amount === 1) return accm;
+          return [...accm, {...item, amount: item.amount-1}];
         } else {
-          return [...ack, item];
+          return [...accm, item];
         }
       }, [] as CartItemType[]))
   };

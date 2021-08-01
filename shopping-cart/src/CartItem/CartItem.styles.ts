@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    display: flex;
+    display: flex;  //-- between cartItem div and catItem img
     justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
     border-bottom: 1px solid lightblue;

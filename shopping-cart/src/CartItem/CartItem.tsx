@@ -5,6 +5,17 @@ import { CartItemType } from '../App';
 import { Wrapper } from './CartItem.styles';
 
 
+/*
+export type CartItemType = { 
+  id: number;
+  category: string;
+  description: string;
+  image: string;
+  price: number;
+  title: string;
+  amount: number; //-- added
+}
+*/
 type Props = {
     item: CartItemType;
     addToCart: (clickedItem: CartItemType) => void;
