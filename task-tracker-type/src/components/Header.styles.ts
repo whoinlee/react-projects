@@ -9,7 +9,7 @@ export const Wrapper = styled.header`
 
   .btn {
     display: inline-block;
-    background: #000;
+    background: 'steelblue';
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -19,5 +19,13 @@ export const Wrapper = styled.header`
     text-decoration: none;
     font-size: 15px;
     font-family: inherit;
+  }
+
+  .btn:focus {
+    outline: none;
+  }
+
+  .btn:active {
+    transform: scale(0.98);
   }
 `;
