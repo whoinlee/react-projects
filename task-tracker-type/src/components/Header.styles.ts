@@ -9,7 +9,7 @@ export const Wrapper = styled.header`
 
   .btn {
     display: inline-block;
-    background: 'steelblue';
+    background: #000;
     color: #fff;
     border: none;
     padding: 10px 20px;

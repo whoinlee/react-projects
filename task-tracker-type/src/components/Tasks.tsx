@@ -13,14 +13,14 @@ import { TaskType } from './DataTypes';
 
 type Props = {
     tasks: TaskType[];
-    onDelete: () => void;    //TODO
-    onToggle: () => void;    //TODO
+    onDelete: (id:number) => void; 
+    onToggle: (id:number) => void;
 }
 const Tasks:React.FC<Props> = ( {tasks, onDelete, onToggle} )  => {
   return (
     <>
     {tasks.map((task, index) => 
-        <Task key={task.id} task={task}/>
+        <Task key={task.id} task={task} onDelete={onDelete} onToggle={onToggle} />
     )}
       {/* <h1>No Tasks To Show</h1> */}
     </>

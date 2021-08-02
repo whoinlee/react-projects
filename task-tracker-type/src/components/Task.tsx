@@ -13,12 +13,17 @@ import { TaskType } from './DataTypes';
 
 type Props = {
   task: TaskType;
+  onDelete: (id:number) => void;
+  onToggle: (id:number) => void;
 }
-const Task:React.FC<Props> = ( {task} ) => {
+const Task:React.FC<Props> = ( {task, onDelete, onToggle} ) => {
   return (
-    <Wrapper>
-      <h3>{task.text} <FaTimes className='faTimes' /></h3>
-      <p>{task.day}</p>
+    <Wrapper >
+      <div  className={`${task.reminder ? 'reminder': ''}`} 
+            onDoubleClick={e => {onToggle(task.id); console.log(task.reminder)}} >
+        <h3>{task.text} <FaTimes className='faTimes' onClick={(e) => {onDelete(task.id)}}/></h3>
+        <p>{task.day}</p>
+      </div>
     </Wrapper>
   )
 }

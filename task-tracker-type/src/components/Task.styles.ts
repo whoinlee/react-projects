@@ -3,9 +3,17 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   background: #f4f4f4;
-  margin: 5px;
-  padding: 10px 20px;
   cursor: pointer;
+  margin: 5px;
+
+  div {
+    margin-left: 0px;
+    padding: 10px 20px;
+  }
+
+  .reminder {
+    border-left: 5px solid green;
+  }
 
   h3 {
     display: flex;
@@ -23,8 +31,6 @@ export const Wrapper = styled.div`
     cursor: pointer;
   }
 
-  .reminder {
-    border-left: 5px solid green;
-  }
+
 
 `;

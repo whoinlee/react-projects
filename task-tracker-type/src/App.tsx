@@ -44,16 +44,29 @@ const showAdd = () => {console.log("showAdd")};
 
 function App() {
   const [tasks, setTasks] = useState(tasksArr);
-  const onDelete = () => {console.log('onDelete')};
-  const onToggle = () => {console.log('onToggle')};
+  const deleteTask = (id:number) => {
+    console.log('App :: deleteTask');
+    setTasks(tasks.filter((task) => task.id !== id));
+  };
+  const toggleReminder = (id:number) => {
+    console.log('App :: toggleReminder');
+    setTasks(tasks.map((task) => 
+      (task.id === id) ? {...task, reminder: !task.reminder} : task
+    ))
+  };
 
   return (
     <Router>
       <Wrapper>
         <Header title="Task Tracker" onAdd={onAdd} showAdd={showAdd} />
         <Route path='/' >
+          <>
           <AddTask />
-          <Tasks tasks={tasks} onDelete={onDelete} onToggle={onToggle} />
+          {tasks.length > 0 ? 
+          <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
+          : 'No Tasks To Show'
+          }
+          </>
         </Route>
         <Route path='/about' component={About} />
         <Footer />
