@@ -54,6 +54,7 @@ export const Wrapper = styled.form`
         text-decoration: none;
         font-size: 15px;
         font-family: inherit;
+        width: 98%;
     }
 
     .btn:focus {

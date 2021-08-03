@@ -38,12 +38,14 @@ const tasksArr:TaskType[] = [
       "id": 3
   },
 ]
-
-const onAdd = () => {console.log("onAdd")};
-const showAdd = () => {console.log("showAdd")};
-
 function App() {
+  const [showAddTask, setShowAddTask] = useState(false);
   const [tasks, setTasks] = useState(tasksArr);
+
+  const addTask = (task:TaskType) => {
+    setTasks([...tasks, task]);
+    console.log("App:: task is ", task);
+  };
   const deleteTask = (id:number) => {
     console.log('App :: deleteTask');
     setTasks(tasks.filter((task) => task.id !== id));
@@ -58,10 +60,10 @@ function App() {
   return (
     <Router>
       <Wrapper>
-        <Header title="Task Tracker" onAdd={onAdd} showAdd={showAdd} />
+        <Header title="Task Tracker" onAdd={() => setShowAddTask(!showAddTask)} showAdd={showAddTask} />
         <Route path='/' >
           <>
-          <AddTask />
+          {showAddTask && <AddTask addTask={addTask} />}
           {tasks.length > 0 ? 
           <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
           : 'No Tasks To Show'
@@ -70,17 +72,7 @@ function App() {
         </Route>
         <Route path='/about' component={About} />
         <Footer />
-        {/* <Header onAdd={() => setShowAddTask(!showAddTask)} 
-                  showAdd={showAddTask} /> */}
-          {/* <Route path='/' exact render={(props) => (
-            <>
-            {showAddTask && <AddTask onAdd={addTask} />}
-            {tasks.length > 0 ? <Tasks tasks={tasks} 
-                                  onDelete={deleteTask} 
-                                  onToggle={toggleReminder}/> 
-                              : 'No Tasks To Show'}
-            </>
-          )} /> */}
+
       </Wrapper>
     </Router>
   );

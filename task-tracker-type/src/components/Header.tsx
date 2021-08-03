@@ -8,15 +8,17 @@ import { Wrapper } from './Header.styles';
 
 type Props = {
     title: string;
-    onAdd: () => void;      //TODO
-    showAdd: () => void;    //TODO
+    onAdd: () => void;
+    showAdd: boolean;    //TODO
 }
-const onClick = () => {console.log("button clicked")};
 const Header:React.FC<Props> = ({ title, onAdd, showAdd }) => {
   return (
     <Wrapper>
       <h1>{title}</h1>
-      <Button text='add' color="green" onClick={onClick} />
+      <Button text={showAdd ? 'Close' : 'Add'} 
+              color={showAdd ? 'red': 'green'} 
+              onClick={onAdd} 
+      />
     </Wrapper>
   )
 }

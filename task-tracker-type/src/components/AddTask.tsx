@@ -2,10 +2,13 @@ import React, {useState} from 'react';
 //-- Styles
 import { Wrapper } from './AddTask.styles'
 //-- Types
-// import { TaskType } from './DataTypes';
+import { TaskType } from './DataTypes';
 
 
-const AddTask = () => {
+type Props = {
+  addTask: (task:TaskType) => void;
+}
+const AddTask:React.FC<Props> = ({addTask}) => {
   const [text, setText] = useState('');
   const [day, setDay] = useState('');
   const [reminder, setReminder] = useState(false);
@@ -17,7 +20,8 @@ const AddTask = () => {
         alert('Please add a task');
     }
 
-    // onAdd( { text, day, reminder });
+    const id = Math.floor(Math.random()*1000) + 1;  //TODO: check if unique
+    addTask ({ text, day, reminder, id });
     setText('');
     setDay('');
     setReminder(false);
@@ -27,12 +31,12 @@ const AddTask = () => {
     <Wrapper onSubmit={onSubmit}>
         <div className='form-control'>
           <label>Task</label>
-          <input type="text" placeholder="Add Task" 
+          <input type="text" placeholder="Add Task" value={text}
                   onChange={e=>setText(e.target.value)}/>
         </div>
         <div className='form-control'>
           <label>Day & Time</label>
-          <input type="text" placeholder="Add Day & Time" 
+          <input type="text" placeholder="Add Day & Time" value={day} 
                   onChange={e=>setDay(e.target.value)}/>
         </div>
         <div className='form-control form-control-check'>
