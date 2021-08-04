@@ -1,27 +1,24 @@
 import React, { useState, useContext } from 'react';
 //-- Contexts
 import { GlobalContext } from '../contexts/GlobalState';
-//-- Types
-import { TransactionType } from '../datatypes/DataTypes';
 //-- Styles
 import '../styles/AddTransaction.css';
 
 
 const AddTransaction = () => {
-    const [text, setText ]= useState('');
-    const [amount, setAmount]= useState(0);
     const { addTransaction } = useContext(GlobalContext);
-
+    const [text, setText ]= useState('');
+    const [amount, setAmount]= useState('');
+  
     const onSubmit = (e:React.FormEvent) => {
       e.preventDefault();
-      
-      const newTransaction:TransactionType = {
+      addTransaction({
         id: Math.floor(Math.random() * 100000000),
         text,
-        amount: +amount
-      }
-  
-      addTransaction(newTransaction);
+        amount:+amount
+      });
+      setText('');
+      setAmount('');
     }
 
   return (
@@ -39,12 +36,12 @@ const AddTransaction = () => {
             (negative - expense, positive - income)</label
           >
           <input type="number" value={amount} placeholder="Enter amount..." 
-                 onChange={ e => setAmount(Number(e.target.value)) }/>
+                 onChange={ e => setAmount(e.target.value) }/>
         </div>
         <button className="btn">Add transaction</button>
       </form>
     </>
-  )
-}
+  );
+};
 
-export default AddTransaction
+export default AddTransaction;

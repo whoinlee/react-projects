@@ -27,7 +27,7 @@ const Expense = () => {
         <p className="money minus">${expense}</p>
       </div>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Expense
+export default Expense;

@@ -17,7 +17,7 @@ const TransactionList = () => {
         {transactions.map((transaction) => <Transaction transaction={transaction} key={transaction.id}/>)}
       </ul>
     </>
-  )
-}
+  );
+};
 
-export default TransactionList
+export default TransactionList;
