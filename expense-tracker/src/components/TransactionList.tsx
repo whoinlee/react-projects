@@ -7,7 +7,6 @@ import { GlobalContext } from '../contexts/GlobalState';
 import '../styles/Transactions.css';
 
 
-
 const TransactionList = () => {
   const { transactions } = useContext(GlobalContext);
 
@@ -15,7 +14,7 @@ const TransactionList = () => {
     <>
       <h3>History</h3>
       <ul className="list">
-        {transactions.map((transaction) => <Transaction transaction={transaction} />)}
+        {transactions.map((transaction) => <Transaction transaction={transaction} key={transaction.id}/>)}
       </ul>
     </>
   )

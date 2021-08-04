@@ -11,7 +11,9 @@ const initialState:State = {
     { id: 2, text: 'Salary', amount: 300 },
     { id: 3, text: 'Book', amount: -10 },
     { id: 4, text: 'Camera', amount: 150 }
-  ]
+  ],
+  deleteTransaction: (id:number) => {},
+  addTransaction: (transaction) => {}
 }
 //-- Create context
 export const GlobalContext = createContext(initialState);
@@ -41,8 +43,7 @@ export const GlobalProvider = ({ children }:Props) => {
   //-------------------------------------//
 
   return (
-    <GlobalContext.Provider value={{transactions: state.transactions, deleteTransaction,
-      addTransaction}} >
+    <GlobalContext.Provider value={{transactions: state.transactions, deleteTransaction, addTransaction}} >
         {children}
     </GlobalContext.Provider>
   );
