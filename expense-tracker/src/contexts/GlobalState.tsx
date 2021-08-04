@@ -1,7 +1,7 @@
 import React, { createContext, useReducer } from 'react';
 import AppReducer from './AppReducer';
 //-- Types
-import { TransactionType, State, Action } from '../datatypes/DataTypes';
+import { TransactionType, State } from '../datatypes/DataTypes';
 
 
 //-- Initial state
@@ -13,9 +13,9 @@ const initialState:State = {
     { id: 4, text: 'Camera', amount: 150 }
   ]
 }
-
 //-- Create context
 export const GlobalContext = createContext(initialState);
+
 
 //-- Provider component
 type Props = {
@@ -26,22 +26,23 @@ export const GlobalProvider = ({ children }:Props) => {
 
   //-- Actions -------------------------//
   function deleteTransaction(id:number) {
-//     dispatch({
-//       type: 'DELETE_TRANSACTION',
-//       payload: id
-//     });
+    dispatch({
+      type: 'DELETE_TRANSACTION',
+      payload: id
+    });
   }
 
   function addTransaction(transaction:TransactionType) {
-//     dispatch({
-//       type: 'ADD_TRANSACTION',
-//       payload: transaction
-//     });
+    dispatch({
+      type: 'ADD_TRANSACTION',
+      payload: transaction
+    });
   }
   //-------------------------------------//
 
   return (
-    <GlobalContext.Provider value={{transactions: state.transactions}} >
+    <GlobalContext.Provider value={{transactions: state.transactions, deleteTransaction,
+      addTransaction}} >
         {children}
     </GlobalContext.Provider>
   );

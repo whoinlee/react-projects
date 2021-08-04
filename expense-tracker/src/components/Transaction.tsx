@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
+//-- Contexts
+import { GlobalContext } from '../contexts/GlobalState';
 //-- Types
 import { TransactionType } from '../datatypes/DataTypes';
 //-- Styles
@@ -9,7 +11,11 @@ type Props = {
   transaction: TransactionType;
 };
 const Transaction:React.FC<Props> = ( {transaction} ) => {
+  const { deleteTransaction } = useContext(GlobalContext);
+  console.log("Transaction :: deleteTransaction ? ", deleteTransaction);
   const sign = transaction.amount < 0 ? '-' : '+';
+
+  /* onClick={() => deleteTransaction(transaction.id)}  */
 
   return (
     <li className={transaction.amount < 0 ? 'minus' : 'plus'}>

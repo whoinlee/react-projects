@@ -5,9 +5,11 @@ export type TransactionType = {
 }
 
 export type State = {
-    transactions: TransactionType[]
+    transactions: TransactionType[];
+    deleteTransaction?: (id:number) => void;
+    addTransaction?: (transaction:TransactionType) => void;
 }
 
 export type Action =  
-| { type: 'DELETE_TRANSACTION' }
-| { type: 'ADD_TRANSACTION' }
+| { type: 'DELETE_TRANSACTION', payload: number }
+| { type: 'ADD_TRANSACTION', payload: TransactionType }
