@@ -9,6 +9,7 @@ test("App Snapshot Test", () => {
   const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 })
+
 // it('renders without crashing', () => {
 //   const div = document.createElement('div');
 //   ReactDOM.render(<App />, div);
