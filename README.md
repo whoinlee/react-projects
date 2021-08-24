@@ -2,7 +2,7 @@
 
 Implementing small react projects, to sharpen React, TypeScript, StyledComponent/Tailwind, and testing skills.
 
-**1.** Appointment Scheduler in React & Tailwind
+**1.** Appointment Scheduler in **React & Tailwind**
 
 **2.** Shopping Cart in **React & TypeScript**
 
