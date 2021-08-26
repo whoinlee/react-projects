@@ -15,7 +15,7 @@ function App() {
         <h1>WhoIN's Todo App</h1>
       </header>
       <InputForm inputText={inputText} setInputText={setInputText} setTodos={setTodos} todos={todos}/>
-      <TodoList />
+      <TodoList todos={todos}/>
     </div>
   );
 }
