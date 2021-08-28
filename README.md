@@ -16,4 +16,6 @@ Implementing small react projects, to sharpen React, TypeScript, StyledComponent
 
 **7.** React Testing with **Flow, ESLint, and Jest**
 
-**8.** React ToDo App in **React**
+**8.** Todo App in **React**
+
+**9.** Analog Clock in **React**
