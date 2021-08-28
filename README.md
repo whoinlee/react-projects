@@ -18,4 +18,4 @@ Implementing small react projects, to sharpen React, TypeScript, StyledComponent
 
 **8.** Todo App in **React**
 
-**9.** Analog Clock in **React**
+**9.** Analog Clock in **React and SASS**

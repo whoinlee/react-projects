@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 //-- Styles
-import './App.css';
+import './App.scss';
 //-- Components
 import InputForm from './components/InputForm';
 import TodoList from './components/TodoList';
