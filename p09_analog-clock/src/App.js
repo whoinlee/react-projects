@@ -1,6 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Clock from './components/Clock';
-import './App.scss';
 
 function App() {
   const [secRatio, setSecRatio] = useState(0);
@@ -17,7 +16,10 @@ function App() {
     setHourRatio(hourRatio);
   }
 
-  setInterval(setClock, 1000);
+  useEffect(() => {
+    setClock();
+    setInterval(setClock, 1000);
+  }, []);
 
   return (
     <div className="App">
