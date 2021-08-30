@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  font-size: 3.5rem;
+  font-family: sans-serif;
+  color: rgba(8, 223, 8, 0.9);
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 20px;
+  width: 600px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
