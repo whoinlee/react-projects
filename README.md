@@ -20,4 +20,6 @@ Implementing small react projects, to sharpen React, TypeScript, StyledComponent
 
 **9.** Analog Clock in **React and SASS**
 
-**10.** Digital Clock in **React**
+**10.** [Digital Clock](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p10_digital-clock) in **React**
+
+**11.** [NavBar](https://github.com/whoinlee/stretchDaily108_vanillaJS/tree/main/p11_navBar) in **React**
