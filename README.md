@@ -22,4 +22,4 @@ Implementing small react projects, to sharpen React, TypeScript, StyledComponent
 
 **10.** [Digital Clock](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p10_digital-clock) in **React**
 
-**11.** [NavBar](https://github.com/whoinlee/stretchDaily108_vanillaJS/tree/main/p11_navBar) in **React**
+**11.** [NavBar](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p11_navBar) in **React**
