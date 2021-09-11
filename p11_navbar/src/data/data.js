@@ -47,7 +47,7 @@ export const social = [
   },
   {
     id: 4,
-    url: 'https://www.behance.com',
+    url: 'https://www.behance.net',
     icon: <FaBehance />,
   },
 ]

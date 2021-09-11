@@ -1,11 +1,5 @@
 @import "config";
 
-/*
-=============== 
-Global Styles
-===============
-*/
-
 *,
 ::after,
 ::before {
@@ -25,8 +19,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: $font-stack2;
 }
 
 ul {
