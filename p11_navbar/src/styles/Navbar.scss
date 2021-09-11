@@ -1,0 +1,64 @@
+@import "config";
+
+/*
+  =============== 
+  Navbar
+  ===============
+*/
+nav {
+  // background: white;
+  background: red;
+  box-shadow: $light-shadow;
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color: $primary-color-5;
+  background: transparent;
+  border-color: transparent;
+  transition: $transition;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary-color-1;
+    transform: rotate(90deg);
+  }
+}
+
+.logo {
+  height: 40px;
+}
+.links a {
+  color: $grey-color-3;
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: $spacing;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: $transition;
+
+  &:hover {
+    background: $primary-color-8;
+    color: $primary-color-5;
+    padding-left: 1.5rem;
+  }
+}
+
+.social-icons {
+  display: none;
+}
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: $transition;
+}
+.show-container {
+  height: 10rem;
+}
+
+@import "media";
