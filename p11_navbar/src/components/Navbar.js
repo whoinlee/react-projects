@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { FaBars, FaTwitter } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import { links, social } from '../data/data';
 // import logo from './logo.svg';
 import '../styles/Navbar.scss';
@@ -9,9 +9,21 @@ const Navbar = () => {
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
   const toggleLinks = () => {
-    console.log("toggleLinks")
-    // setShowLinks(!showLinks);
+    // console.log("toggleLinks");
+    setShowLinks(!showLinks);
   };
+  // const linksHeight = linksRef.current.getBoundingClientRect().height;
+
+  /******/
+  useEffect(() => {
+    console.log("useEffect"); //-- some unnecessary calls, this is called whenever toggle links
+    const linksHeight = linksRef.current.getBoundingClientRect().height;
+    if (showLinks) {
+      linksContainerRef.current.style.height = `${linksHeight}px`;
+    } else {
+      linksContainerRef.current.style.height = '0px';
+    }
+  }, [showLinks]);
 
   return (
     <nav>
@@ -22,6 +34,7 @@ const Navbar = () => {
             <FaBars />
           </button>
         </div>
+        {/* end .nav-header */}
         <div className='links-container' ref={linksContainerRef}>
           <ul className='links' ref={linksRef}>
             {links.map((link) => {
@@ -34,6 +47,7 @@ const Navbar = () => {
             })}
           </ul>
         </div>
+        {/* end .links-container */}
         <ul className='social-icons'>
           {social.map((socialIcon) => {
             const { id, url, icon } = socialIcon;
@@ -44,6 +58,7 @@ const Navbar = () => {
             );
           })}
         </ul>
+        {/* end .social-icons */}
       </div>
     </nav>
   );
