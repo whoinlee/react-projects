@@ -2,9 +2,9 @@
 
 Implementing small react projects, to sharpen React, TypeScript, StyledComponent/Tailwind, and testing skills.
 
-**1.** Appointment Scheduler in **React & Tailwind**
+**1.** [Appointment Scheduler](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p01_appointment-scheduler) in **React & Tailwind**
 
-**2.** Shopping Cart in **React & TypeScript**
+**2.** [Shopping Cart](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p02_shopping-cart) in **React & TypeScript**
 
 **3.** [Task Tracker](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p03_task-tracker-react) in **React**
 
@@ -18,11 +18,11 @@ Implementing small react projects, to sharpen React, TypeScript, StyledComponent
 
 **6.1.** [Expense Tracker](https://github.com/whoinlee/expenseTracker_MERN) in **MERN** (MongoDB, Express, React, and NodeJS)
 
-**7.** React Testing with **Flow, ESLint, and Jest**
+**7.** [React Testing](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p07_reactTesting) with **Flow, ESLint, and Jest**
 
-**8.** Todo App in **React**
+**8.** [Todo App](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p08_todo) in **React**
 
-**9.** Analog Clock in **React and SASS**
+**9.** [Analog Clock](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p09_analog-clock) in **React and SASS**
 
 **10.** [Digital Clock](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p10_digital-clock) in **React**
 
