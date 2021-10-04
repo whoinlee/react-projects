@@ -27,3 +27,7 @@ Implementing small react projects, to sharpen React, TypeScript, StyledComponent
 **10.** [Digital Clock](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p10_digital-clock) in **React**
 
 **11.** [Nav Bar](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p11_navbar) in **React** (useRef, useState, and useEffect hooks) and **SASS**
+
+**12.** [My Github](https://github.com/whoinlee/myGitHub_ReactGraphQL) in **React** and **GraphQL**
+
+**13.** [Choropleth Map](https://github.com/whoinlee/HIV_dataVizReactD3) of the HIV/AIDs data set in **React** and **D3**
