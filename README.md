@@ -45,3 +45,5 @@ Implementing small react projects, to sharpen React, TypeScript, StyledComponent
 **19.** [Histogram](https://github.com/whoinlee/dataViz_ReactD3/tree/histogram) of missing migrants data set. Built with **React** and **D3** ==> [**Demo**](https://quirky-mcclintock-2e928b.netlify.app/)
 
 **20.** [World Map and Histogram (w. brushing)](https://github.com/whoinlee/dataViz_ReactD3/tree/histo-worldmap-brushing) of missing migrants data set. Built with **React** and **D3** ==> [**Demo**](https://dreamy-agnesi-b2acb6.netlify.app/)
+
+**21.** [Weather Data Visualization](https://github.com/whoinlee/weather_dataVizReactD3) of NYC weather dataset. Built with **React**, **D3**, and **react-vis**.
