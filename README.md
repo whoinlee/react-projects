@@ -10,13 +10,13 @@ Implementing small react projects, to sharpen React, TypeScript, StyledComponent
 
 **4.** [Task Tracker](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p04_task-tracker-reactType) in **React & TypeScript**
 
-**4.1.** [Task Tracker](https://github.com/whoinlee/taskTracker_ReactType) in **React** (contextAPI and useReducer hook) & **TypeScript**
+- [Task Tracker](https://github.com/whoinlee/taskTracker_ReactType) in **React** (contextAPI and useReducer hook) & **TypeScript**
 
 **5.** [Expense Tracker](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p05_expense-tracker-vanillaJS) in **VanillaJS**
 
 **6.** [Expense Tracker](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p06_expense-tracker-reactType) in **React & TypeScript**
 
-**6.1.** [Expense Tracker](https://github.com/whoinlee/expenseTracker_MERN) in **MERN** - MongoDB, Express, React (contextAPI and useReducer hook), and NodeJS - and **TypeScript**
+- [Expense Tracker](https://github.com/whoinlee/expenseTracker_MERN) in **MERN** - MongoDB, Express, React (contextAPI and useReducer hook), and NodeJS - and **TypeScript**
 
 **7.** [React Testing](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p07_reactTesting) with **Flow, ESLint, and Jest**
 
