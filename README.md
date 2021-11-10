@@ -2,7 +2,7 @@
 
 Implementing small react projects, to sharpen React, TypeScript, StyledComponent/Tailwind, and testing skills.
 
-**14.** [Expense Tracker](https://github.com/whoinlee/expenseTracker_MERN) in **MERN**(MongoDB, Express, React, NodeJS), **contextAPI and useReducer hook**, and **TypeScript**
+**14.** [Expense Tracker](https://github.com/whoinlee/expenseTracker_MERN) in **MongoDB, Express, React, NodeJS** (MERN), **contextAPI and useReducer hook**, and **TypeScript**
 
 **13.** [Task Tracker](https://github.com/whoinlee/taskTracker_ReactType) in **React**, **contextAPI and useReducer hook**, and **TypeScript**
 
