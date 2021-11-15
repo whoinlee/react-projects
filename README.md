@@ -2,7 +2,7 @@
 
 Implementing small react projects, to sharpen React, TypeScript, StyledComponent/Tailwind, and testing skills.
 
-**14.** [Weather Data Viz](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p14_weather-dataviz) in **React** and **D3**.
+**15.** [Weather Data Viz](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p15_weather-dataviz) in **React** and **D3**.
 
 **14.** [Expense Tracker](https://github.com/whoinlee/expenseTracker_MERN) in **MongoDB, Express, React, NodeJS** (MERN), **contextAPI** and **useReducer** hook, and **TypeScript**
 
