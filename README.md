@@ -26,6 +26,8 @@ Implementing small react projects, to sharpen React, TypeScript, StyledComponent
 
 **4.** [Task Tracker](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p04_task-tracker-reactType) in **React** and **TypeScript**
 
+- ==> [**Live Demo**](https://festive-engelbart-541ec4.netlify.app/)
+
 **3.** [Task Tracker](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p03_task-tracker-react) in **React**
 
 **2.** [Shopping Cart](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p02_shopping-cart) in **React** and **TypeScript**
