@@ -2,9 +2,9 @@
 
 Implementing small react projects, to sharpen React, TypeScript, StyledComponent/Tailwind, and testing skills.
 
-**17.** [Tech Assessment2](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p17_tech-assess2-dataviz) in **React** and **D3** (in progress).
+**17.** [Project2](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p17_tech-assess2-dataviz) in **React** and **D3** (in progress).
 
-**16.** [Tech Assessment1](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p16_tech-assess1) in **React**.
+**16.** [Project1](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p16_tech-assess1) in **React**.
 
 **15.** [Weather Data Viz](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p15_weather-dataviz) in **React** and **D3** (in progress).
 
