@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'News Cycle';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./fonts/News-Cycle-regular/News-Cycle-regular.eot');
+  src: url('./fonts/News-Cycle-regular/News-Cycle-regular.eot?#iefix') format('embedded-opentype'),
+       local('News Cycle'),
+       local('News-Cycle-regular'),
+       url('./fonts/News-Cycle-regular/News-Cycle-regular.woff2') format('woff2'),
+       url('./fonts/News-Cycle-regular/News-Cycle-regular.woff') format('woff'),
+       url('./fonts/News-Cycle-regular/News-Cycle-regular.ttf') format('truetype'),
+       url('./fonts/News-Cycle-regular/News-Cycle-regular.svg#NewsCycle') format('svg');
+}
+
+@font-face {
+  font-family: 'News Cycle';
+  font-weight: 700;
+  font-style: normal;
+  src: url('./fonts/News-Cycle-700/News-Cycle-700.eot');
+  src: url('./fonts/News-Cycle-700/News-Cycle-700.eot?#iefix') format('embedded-opentype'),
+       local('News Cycle Bold'),
+       local('News-Cycle-700'),
+       url('./fonts/News-Cycle-700/News-Cycle-700.woff2') format('woff2'),
+       url('./fonts/News-Cycle-700/News-Cycle-700.woff') format('woff'),
+       url('./fonts/News-Cycle-700/News-Cycle-700.ttf') format('truetype'),
+       url('./fonts/News-Cycle-700/News-Cycle-700.svg#NewsCycle') format('svg');
+}
+
