@@ -2,7 +2,7 @@
 
 Implementing small react projects, to sharpen React, TypeScript, StyledComponent/Tailwind, and testing skills.
 
-**17.** [Webpack](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p18_react-webpack) in **React** (React App boilerplate using **Webpack**).
+**17.** [React App Boilerplate](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p18_react-webpack) in **React** (using **Webpack**).
 
 **16.** [TV App Prototype](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p16_tech-assess1) in **React**.
 
