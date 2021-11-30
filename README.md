@@ -4,9 +4,9 @@ Implementing small react projects, to sharpen React, TypeScript, StyledComponent
 
 **18.** [Webpack](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p18_react-webpack) in **React** (React App boilerplate using **Webpack**).
 
-**17.** [Project2](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p17_tech-assess2-dataviz) in **Express**, **React**, **NodeJS** and **D3** (in progress).
+**17.** [Finance Data Viz](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p17_tech-assess2-dataviz) in **Express**, **React**, **NodeJS** and **D3** (in progress).
 
-**16.** [Project1](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p16_tech-assess1) in **React**.
+**16.** [TV App Prototype](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p16_tech-assess1) in **React**.
 
 **15.** [Weather Data Viz](https://github.com/whoinlee/stretchDaily30_reactJS/tree/main/p15_weather-dataviz) in **React** and **D3** (in progress).
 
