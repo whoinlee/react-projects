@@ -115,8 +115,8 @@ const Rail = ({ title, assets }) => {
     <div style={styles.rail}>
       <h2>{title}</h2>
       <div style={styles.tilesContainer}>
-        {assets.map((item) => (
-          <Tile title={item.title}></Tile>
+        {assets.map((item, i) => (
+          <Tile key={i + item.title} title={item.title}></Tile>
         ))}
       </div>
     </div>
@@ -129,8 +129,12 @@ function App() {
   return (
     <div style={styles.container}>
       <h1>Browse Titles</h1>
-      {data.map((item) => (
-        <Rail title={item.title} assets={item.assets}></Rail>
+      {data.map((item, i) => (
+        <Rail
+          key={i + item.title}
+          title={item.title}
+          assets={item.assets}
+        ></Rail>
       ))}
     </div>
   );
@@ -158,6 +162,7 @@ const styles = {
     margin: "0px 16px 16px 0px",
     backgroundColor: "#999",
     transform: "scale(1)",
+    borderRadius: "5px",
   },
   tileHover: {
     backgroundColor: "#777",
